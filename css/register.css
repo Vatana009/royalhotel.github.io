@@ -1,0 +1,172 @@
+* {
+  font-family: 'Times New Roman', Times, serif;;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../asset/background-image.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.navbar img {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-center {
+  display: flex;
+}
+.navbar-center div {
+  font-size: 20px;
+  margin-right: 50px;
+  border: 1px solid blue;
+  padding: 15px;
+  border-radius: 10px;
+  color: red;
+}
+.navbar-center div a {
+  text-decoration: none;
+}
+.navbar-center div:hover {
+  background-color: red;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar-center div a:hover {
+  color: white;
+}
+.navbar div {
+  text-align: center;
+}
+.navbar form {
+  margin-right: 50px;
+}
+.navbar form button a {
+  text-decoration: none;
+  color: white;
+}
+.navbar form button {
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar form button a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.register {
+  width: 420px;
+  background: rgb(224, 215, 203);
+  color: #fff;
+  border-radius: 50px;
+  padding: 30px 40px;
+  position: relative;
+  text-align: center;
+  left: 40%;
+  margin-top: 10em;
+}
+
+.register h1 {
+  font-size: 36px;
+  text-align: center;
+  color: black;
+}
+.register input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  background-color: white;
+  margin: 15px 0;
+}
+
+.btn-register {
+background-color: white;
+font-size: 20px;
+font-weight: bold;
+width: 60%;
+padding: 15px;
+border: none;
+border-radius: 10px;
+margin-top: 20px;
+justify-content: center;
+}
+
+p {
+  color: black;
+}
+p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .navbar-center div {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      position: relative;
+      left: 5%;
+      font-size: 14px;
+  }
+
+  .navbar form{
+      position: relative;
+      left: 5%;
+  }
+
+  .register {
+    padding: 1rem;
+    width: 80%;
+    height: 90%;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50%;
+  }
+  
+}
